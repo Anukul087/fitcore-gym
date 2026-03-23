@@ -1,16 +1,103 @@
-# React + Vite
+# FitCore Gym – React Fitness Membership Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FitCore Gym is a modern React-based fitness membership and inquiry platform built as part of **Future Interns Task 3**. It is designed as a premium gym landing page with interactive features, localStorage-based persistence, and a protected admin dashboard for internal management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Project Overview
 
-## React Compiler
+FitCore Gym provides a clean and premium user experience for a fitness/gym business. The platform allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Explore fitness programs
+- View trainers and pricing plans
+- Calculate BMI
+- Select a membership plan
+- Submit an inquiry form
+- Automatically link selected plan with inquiry
+- Store inquiry data locally
+- Access a protected admin dashboard for reviewing submissions
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### 🎨 User Interface
+- Responsive premium gym landing page
+- Sticky navigation bar with mobile menu
+- Hero section with CTA
+- Programs section
+- Trainers showcase
+- Membership pricing cards
+- BMI calculator
+- Testimonials section
+- Contact / inquiry form
+- Success modals for user actions
+
+### ⚙️ Interactive Functionality
+- Membership plan selection
+- Selected plan auto-filled into inquiry form
+- Smooth scroll from pricing section to inquiry section
+- Inquiry form submission with validation
+- Success popup on inquiry submit
+- Success popup on plan selection
+
+### 💾 Data Handling
+- localStorage-based persistence for inquiries
+- localStorage-based tracking for selected plans
+- Temporary selected plan storage before inquiry submission
+
+### 🔐 Admin Features
+- Protected admin login page
+- Demo-level password-based route protection
+- Admin dashboard to view submitted inquiries
+- View selected plans
+- Delete individual records
+- Clear all records
+- Logout support with session persistence
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript (ES6+)
+- CSS3
+
+### Libraries / Tools
+- React Router DOM
+- Lucide React Icons
+- LocalStorage API
+- VS Code
+- Git & GitHub
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+fitcore-gym/
+│── public/
+│── src/
+│   │── components/
+│   │   │── Navbar.jsx
+│   │   │── Hero.jsx
+│   │   │── Features.jsx
+│   │   │── Stats.jsx
+│   │   │── Programs.jsx
+│   │   │── Trainers.jsx
+│   │   │── Pricing.jsx
+│   │   │── BMI.jsx
+│   │   │── Testimonials.jsx
+│   │   │── Contact.jsx
+│   │   │── Modal.jsx
+│   │   │── AdminDashboard.jsx
+│   │   │── Footer.jsx
+│   │── App.jsx
+│   │── main.jsx
+│   │── index.css
+│── package.json
+│── README.md
+│── vercel.json
